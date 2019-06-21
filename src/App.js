@@ -60,10 +60,10 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Hello RL! Welcome to the equity calculator</h1>
+          <h1>Hello and welcome to the equity calculator</h1>
         </header>
         <section className="text">
-          <p>Give it a try, at the moment it simply subtracts the outstanding mortgage and loans from the value of the home</p>
+          <p>Simply enter some values below and the form subtracts the outstanding mortgage and loans from the value of the home!</p>
         </section>
 
         <Modal show={this.state.showResult} modalClosed={this.closeModalHandler}>
