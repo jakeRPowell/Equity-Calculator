@@ -22,7 +22,7 @@ class App extends Component {
       this.setState({showError: true});
     } else if (homeVal && mortgageVal && outstandingLoans) {
       this.setState({
-        result: homeVal - (mortgageVal - outstandingLoans),
+        result: homeVal - (mortgageVal + outstandingLoans),
         showResult: true,
         buttonText: 'Click here to try again'
       });
