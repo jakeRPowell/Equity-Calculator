@@ -6,6 +6,7 @@
 .App {
   text-align: center;
   background-color: #F4FAFF;
+  min-height: 100vh;
   height: 100%;
   padding: 0 3px;
   background-image: url(./Assets/brush-stroke.png);
