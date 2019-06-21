@@ -47,7 +47,10 @@ class App extends Component {
   closeModalHandler = () => {
     this.setState({
       showResult: false,
-      buttonText: 'Click here to calculate'
+      buttonText: 'Click here to calculate',
+      homeVal: undefined,
+      mortgageVal: undefined,
+      outstandingLoans: undefined
     });
     if (this.state.showError) {
       this.setState({showError: false});
