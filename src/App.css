@@ -1,33 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-color: #F4FAFF;
+  height: 100vh;
+  padding: 0 3px;
+  background-image: url(./Assets/brush-stroke.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 30%;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  max-width: 85vw;
+}
+
+.brush {
+  max-width: 85vw;
+  
+  left: 10vw;
+  top: 20vh;
+  z-index: 1;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text {
+  margin: 40px 0;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form-section {
+  margin: 10px 0;
+}
+
+input {
+  cursor: auto;
+  font-size: 1.5rem;
+  height: 30px;
+  z-index: 100;
+  text-align: right;
+  width: 40vw;
+  max-width: 200px;
+  margin-top: 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+button {
+  z-index: 100;
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  transform: scale(0.99);
 }
