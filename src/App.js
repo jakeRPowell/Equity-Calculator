@@ -74,7 +74,7 @@ class App extends Component {
           <section className="form-section home">
         
             <p>{this.state.showError ? 'Please tell us how much your home is worth to continue' : 'Firstly, how much is your home worth?'}</p>
-            £<input autoFocus
+            £ <input autoFocus
               name="homeVal"
               type="number"
               value={this.state.homeVal}
@@ -82,7 +82,7 @@ class App extends Component {
           </section>
           <section className="form-section mortgage">
             <p>How much is left to pay on your mortgage?</p>
-            £<input
+            £ <input
               name="mortgageVal"
               type="number"
               value={this.state.mortgageVal}
@@ -90,7 +90,7 @@ class App extends Component {
           </section>
           <section className="form-section loans">
             <p>If you have any loans secured against your home, how much is left to pay?</p>
-            £<input
+            £ <input
               name="outstandingLoans"
               type="number"
               value={this.state.outstandingLoans}
